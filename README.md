@@ -1,58 +1,63 @@
 <img width="1536" height="1024" alt="Советское кино" src="https://github.com/user-attachments/assets/037145f2-a189-4066-9568-1231468dd941" />
-# Soviet Screen Readers’ Surveys Archive (1959–1991)
 
-This repository contains a compiled dataset based on readers’ surveys published in the Soviet film magazine *Sovetskii Ekran* ("Soviet Screen") between **1959 and 1991**.
+# Архив читательских опросов журнала «Советский экран» (1959–1991)
 
-The magazine regularly published surveys in which readers shared their opinions about cinema. In these surveys they named their **favorite films, actors, and actresses**, and often provided **demographic and social information**, such as age, place of residence, occupation, and cinema-going habits (for example, how frequently they attended movie screenings).
+Этот репозиторий содержит собранный датасет на основе читательских опросов, публиковавшихся в советском киножурнале *«Советский экран»* в период с **1959 по 1991 год**.
 
-This repository brings together the results of these surveys into a **structured dataset covering more than three decades of Soviet film audience responses**.
+Журнал регулярно публиковал опросы, в которых читатели делились своими мнениями о кино. В этих опросах они называли **любимые фильмы, актёров и актрис**, а также нередко указывали **демографическую и социальную информацию**, такую как возраст, место проживания, место работы или род занятий, а также привычки посещения кино (например, как часто они ходят в кино).
 
----
+В данном репозитории результаты этих опросов собраны в **структурированный датасет**, охватывающий более трёх десятилетий зрительских предпочтений советской аудитории.
 
-## Data Sources
+## Источники данных
 
-The magazine issues were collected from digitized archives:
+Номера журнала были собраны из следующих цифровых архивов:
 
 - https://nzdr.ru/biblio/j/se  
 - https://publ.lib.ru/ARCHIVES/S/''Sovetskiy_ekran''_(jurnal)/  
 
-Some issues that were **not available online** were consulted through the collections of the **Russian State Library (RGB)**. These materials were accessed in the archive and digitized in order to complete the dataset.
+Часть выпусков, отсутствующих в открытом доступе в интернете, была найдена в фондах **Российской государственной библиотеки (РГБ)** и дополнительно оцифрована для включения в архив.
 
----
+## Формирование датасета
 
-## Dataset Construction
+Результаты читательских опросов были вручную извлечены из номеров журнала и объединены в **единую таблицу для последующего анализа**.
 
-The results of the readers’ surveys were **manually extracted from the magazine issues and combined into a single spreadsheet for analysis**.
+Таблица включает как **результаты читательского голосования**, так и **социально-демографическую информацию о респондентах**, публиковавшуюся в журнале.
 
-Each row in the dataset corresponds to a **specific survey year**, and the table records the results of readers’ voting and other survey responses.
+В частности, в датасете представлены следующие типы данных:
 
-The dataset includes, among other variables:
+### Результаты голосований
 
-- **Year of the survey**
-- **Number of respondents**
-- **Rankings of the best films** according to readers’ votes (multiple ranked positions)
-- **Films requested by readers for distribution**
-- Additional categories appearing in the magazine surveys
+- рейтинги **лучших фильмов года** по версии читателей  
+- упоминания **любимых актёров и актрис**  
+- фильмы, которые читатели **предлагали выпустить или показать в прокате**  
 
-The structure of the dataset preserves the **ranked nature of the voting results**, allowing researchers to analyze how film preferences changed over time.
+### Демографические и социальные характеристики респондентов
 
----
+- **возраст**  
+- **место проживания**  
+- **место работы или род занятий**  
 
-## Coverage
+### Кинотеатральные практики
 
-- **Magazine:** *Sovetskii Ekran*
-- **Years covered:** 1959–1991
-- **Content type:** Readers’ surveys and voting results
-- **Data format:** Structured spreadsheet dataset
+- **частота посещения кинотеатров**  
+- **количество фильмов, просмотренных за год**  
+- другие характеристики зрительского поведения, упоминавшиеся в опросах
 
----
+Каждая строка таблицы соответствует **конкретному году проведения опроса**, что позволяет анализировать **изменения зрительских предпочтений и характеристик аудитории во времени**.
 
-## Potential Uses
+## Охват данных
 
-This dataset may be useful for research on:
+- **Журнал:** *Советский экран*  
+- **Период:** 1959–1991  
+- **Тип данных:** результаты читательских опросов  
+- **Формат:** структурированная таблица (spreadsheet)
 
-- Soviet cinema audiences and reception  
-- Cultural preferences and taste formation in the USSR  
-- Film history and media studies  
-- Cultural consumption and everyday life in the late Soviet period  
-- Long-term trends in popular cinema
+## Возможные направления использования
+
+Данный датасет может быть полезен для исследований в области:
+
+- истории советского кино  
+- изучения зрительских предпочтений и рецепции кино  
+- культурной истории СССР  
+- социологии культуры и культурного потребления  
+- динамики популярности фильмов, актёров и актрис в позднесоветский период
